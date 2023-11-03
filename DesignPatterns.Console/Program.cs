@@ -1,21 +1,26 @@
-﻿using DesignPatterns.Builder;
+﻿using DesignPatterns.Adapter.Implementations;
+using DesignPatterns.Builder;
 using DesignPatterns.FactoryMethod.Models;
 using DesignPatterns.Serialization.Extensions;
+using DesignPatterns.Singleton.Implementations;
 using Category = DesignPatterns.PrototypeClone.Models.Category;
 using NYPizzaStore = DesignPatterns.FactoryMethod.Factories.NYPizzaStore;
 using Product = DesignPatterns.PrototypeClone.Models.Product;
 
-Console.WriteLine("Let's see design patterns");
+Console.WriteLine("Let's see design patterns\n");
 
 //var sandwich = CreateSandwich();
 //Console.WriteLine($"SANDWICH: {sandwich.Bread}, {sandwich.Cheese}, {sandwich.Condiments}, {sandwich.Protein}, {sandwich.Veggies}");
 
 //CreatePizza(PizzaType.Pepperoni);
-
 //CreateAbstractPizza();
 
-CreateProducts();
-CreateProductsSerialization();
+//CreateProducts();
+//CreateProductsSerialization();
+
+//SingletonPattern();
+
+CreateProductsAdapter();
 
 #region Methods
 
@@ -62,5 +67,22 @@ void CreateProductsSerialization()
     iphone.Name = "Iphone";
     iphone.Category!.Name = "Mobiles";
     Console.WriteLine(iphone);
+}
+
+void SingletonPattern()
+{
+    var capitals = SingletonDataContainer.Instance;
+    var capitals1 = SingletonDataContainer.Instance;
+    var capitals2 = SingletonDataContainer.Instance;
+    var capitals3 = SingletonDataContainer.Instance;
+
+    Console.WriteLine($"London population is {capitals.GetPopulation("London")}");
+}
+
+void CreateProductsAdapter()
+{
+    var xmlConverter = new XmlConverter();
+    var adapter = new XmlToJsonAdapter(xmlConverter);
+    adapter.ConvertXmlToJson();
 }
 #endregion
