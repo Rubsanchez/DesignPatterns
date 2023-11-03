@@ -1,15 +1,21 @@
 ﻿using DesignPatterns.Builder;
 using DesignPatterns.FactoryMethod.Models;
+using DesignPatterns.Serialization.Extensions;
+using Category = DesignPatterns.PrototypeClone.Models.Category;
 using NYPizzaStore = DesignPatterns.FactoryMethod.Factories.NYPizzaStore;
+using Product = DesignPatterns.PrototypeClone.Models.Product;
 
 Console.WriteLine("Let's see design patterns");
 
-var sandwich = CreateSandwich();
-Console.WriteLine($"SANDWICH: {sandwich.Bread}, {sandwich.Cheese}, {sandwich.Condiments}, {sandwich.Protein}, {sandwich.Veggies}");
+//var sandwich = CreateSandwich();
+//Console.WriteLine($"SANDWICH: {sandwich.Bread}, {sandwich.Cheese}, {sandwich.Condiments}, {sandwich.Protein}, {sandwich.Veggies}");
 
-CreatePizza(PizzaType.Pepperoni);
+//CreatePizza(PizzaType.Pepperoni);
 
-CreateAbstractPizza();
+//CreateAbstractPizza();
+
+CreateProducts();
+CreateProductsSerialization();
 
 #region Methods
 
@@ -35,4 +41,26 @@ void CreateAbstractPizza()
 
 }
 
+void CreateProducts()
+{
+    Product notebook = new("MacBook Pro", new Category("Computers"));
+    Console.WriteLine(notebook);
+
+    var iphone = notebook.DeepCopy();
+    iphone.Name = "Iphone";
+    iphone.Category!.Name = "Mobiles";
+    Console.WriteLine(iphone);
+}
+
+void CreateProductsSerialization()
+{
+
+    DesignPatterns.Serialization.Models.Product notebook = new("MacBook Pro", new DesignPatterns.Serialization.Models.Category("Computers"));
+    Console.WriteLine(notebook);
+
+    var iphone = notebook.DeepCopy();
+    iphone.Name = "Iphone";
+    iphone.Category!.Name = "Mobiles";
+    Console.WriteLine(iphone);
+}
 #endregion
