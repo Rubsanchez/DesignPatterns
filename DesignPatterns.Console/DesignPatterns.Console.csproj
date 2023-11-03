@@ -10,7 +10,7 @@
   <ItemGroup>
     <ProjectReference Include="..\DesignPatterns.AbstractFactory\DesignPatterns.AbstractFactory.csproj" />
     <ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.FluentBuilder.csproj" />
-    <ProjectReference Include="..\DesignPatterns.Factory\DesignPatterns.FactoryMethod.csproj" />
+    <ProjectReference Include="..\DesignPatterns.FactoryMethod\DesignPatterns.FactoryMethod.csproj" />
   </ItemGroup>
 
 </Project>
