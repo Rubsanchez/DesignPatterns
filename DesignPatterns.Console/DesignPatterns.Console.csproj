@@ -10,7 +10,10 @@
   <ItemGroup>
     <ProjectReference Include="..\DesignPatterns.AbstractFactory\DesignPatterns.AbstractFactory.csproj" />
     <ProjectReference Include="..\DesignPatterns.Adapter\DesignPatterns.Adapter.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Bridge\DesignPatterns.Bridge.csproj" />
     <ProjectReference Include="..\DesignPatterns.Builder\DesignPatterns.FluentBuilder.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Composite\DesignPatterns.Composite.csproj" />
+    <ProjectReference Include="..\DesignPatterns.Decorator\DesignPatterns.Decorator.csproj" />
     <ProjectReference Include="..\DesignPatterns.FactoryMethod\DesignPatterns.FactoryMethod.csproj" />
     <ProjectReference Include="..\DesignPatterns.PrototypeClone\DesignPatterns.PrototypeClone.csproj" />
     <ProjectReference Include="..\DesignPatterns.Serialization\DesignPatterns.Serialization.csproj" />

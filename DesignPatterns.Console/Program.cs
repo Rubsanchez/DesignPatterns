@@ -1,5 +1,8 @@
 ﻿using DesignPatterns.Adapter.Implementations;
+using DesignPatterns.Bridge;
+using DesignPatterns.Bridge.Implementations;
 using DesignPatterns.Builder;
+using DesignPatterns.Composite;
 using DesignPatterns.FactoryMethod.Models;
 using DesignPatterns.Serialization.Extensions;
 using DesignPatterns.Singleton.Implementations;
@@ -20,7 +23,11 @@ Console.WriteLine("Let's see design patterns\n");
 
 //SingletonPattern();
 
-CreateProductsAdapter();
+//CreateProductsAdapter();
+
+//BridgePattern();
+
+CompositePattern();
 
 #region Methods
 
@@ -85,4 +92,28 @@ void CreateProductsAdapter()
     var adapter = new XmlToJsonAdapter(xmlConverter);
     adapter.ConvertXmlToJson();
 }
+
+void BridgePattern()
+{
+    ReaderApp appWindows7 = new Windows7(new NormalDisplay()) { Text = "Learning bridge" };
+    ReaderApp appWindows10 = new Windows10(new ReverseDisplay()) { Text = "Learning bridge" };
+
+    appWindows7.Display();
+    appWindows10.Display();
+}
+
+void CompositePattern()
+{
+    DesignPatterns.Composite.Product ram = new SimpleProduct("Ram 16GB", 20);
+    DesignPatterns.Composite.Product processor = new SimpleProduct("Intel I7", 300);
+    DesignPatterns.Composite.Product rom = new SimpleProduct("SSD 1TB", 200);
+
+    DesignPatterns.Composite.Product pcGamer = new CompositeProduct("Basic Pc Gaming");
+    pcGamer.Add(ram);
+    pcGamer.Add(processor);
+    pcGamer.Add(rom);
+
+    Console.WriteLine(pcGamer.GetPrice());
+}
+
 #endregion
