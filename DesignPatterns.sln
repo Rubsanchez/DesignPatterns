@@ -5,13 +5,9 @@ VisualStudioVersion = 17.7.34202.233
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.FluentBuilder", "DesignPatterns.Builder\DesignPatterns.FluentBuilder.csproj", "{701E0C50-14F6-4576-AAB7-70DA40F83E65}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Console", "DesignPatterns.Console\DesignPatterns.Console.csproj", "{DBF88BDE-1888-492A-9774-1FF7615482E3}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.FactoryMethod", "DesignPatterns.FactoryMethod\DesignPatterns.FactoryMethod.csproj", "{1C9AF350-5585-44FD-AE38-407562B5D74B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.AbstractFactory", "DesignPatterns.AbstractFactory\DesignPatterns.AbstractFactory.csproj", "{EFDF39B7-E32B-4F57-A184-3E8ABC709900}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "console", "console", "{5B0EA58E-CC51-4108-8A2B-40E291CCB9C3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.PrototypeClone", "DesignPatterns.PrototypeClone\DesignPatterns.PrototypeClone.csproj", "{487771E0-76B4-4957-BEF9-429084FD1873}"
 EndProject
@@ -37,13 +33,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.ChainRespons
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Command", "DesignPatterns.Command\DesignPatterns.Command.csproj", "{A5B20ADD-3921-461E-950D-8A8B7F972BD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Interpreter", "DesignPatterns.Interpreter\DesignPatterns.Interpreter.csproj", "{8F3149C1-42BF-4193-A4C4-6565F8FDD9DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Interpreter", "DesignPatterns.Interpreter\DesignPatterns.Interpreter.csproj", "{8F3149C1-42BF-4193-A4C4-6565F8FDD9DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Memento", "DesignPatterns.Memento\DesignPatterns.Memento.csproj", "{1B50C2D0-073C-47E6-A771-02E1F21AF5CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Memento", "DesignPatterns.Memento\DesignPatterns.Memento.csproj", "{1B50C2D0-073C-47E6-A771-02E1F21AF5CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Mediator", "DesignPatterns.Mediator\DesignPatterns.Mediator.csproj", "{C2C2EEBA-90BA-40E0-B133-02A8AD2EF4BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.Mediator", "DesignPatterns.Mediator\DesignPatterns.Mediator.csproj", "{C2C2EEBA-90BA-40E0-B133-02A8AD2EF4BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.NullObject", "DesignPatterns.NullObject\DesignPatterns.NullObject.csproj", "{FFD73B87-82C0-4D22-B575-A74B36336BAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatterns.NullObject", "DesignPatterns.NullObject\DesignPatterns.NullObject.csproj", "{FFD73B87-82C0-4D22-B575-A74B36336BAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatterns.Observer", "DesignPatterns.Observer\DesignPatterns.Observer.csproj", "{060A6619-6B45-4FBF-93C3-AE2CC7852042}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +53,6 @@ Global
 		{701E0C50-14F6-4576-AAB7-70DA40F83E65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{701E0C50-14F6-4576-AAB7-70DA40F83E65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{701E0C50-14F6-4576-AAB7-70DA40F83E65}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DBF88BDE-1888-492A-9774-1FF7615482E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DBF88BDE-1888-492A-9774-1FF7615482E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DBF88BDE-1888-492A-9774-1FF7615482E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DBF88BDE-1888-492A-9774-1FF7615482E3}.Release|Any CPU.Build.0 = Release|Any CPU
 		{1C9AF350-5585-44FD-AE38-407562B5D74B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1C9AF350-5585-44FD-AE38-407562B5D74B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C9AF350-5585-44FD-AE38-407562B5D74B}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -131,12 +125,13 @@ Global
 		{FFD73B87-82C0-4D22-B575-A74B36336BAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FFD73B87-82C0-4D22-B575-A74B36336BAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FFD73B87-82C0-4D22-B575-A74B36336BAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{060A6619-6B45-4FBF-93C3-AE2CC7852042}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{060A6619-6B45-4FBF-93C3-AE2CC7852042}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{060A6619-6B45-4FBF-93C3-AE2CC7852042}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{060A6619-6B45-4FBF-93C3-AE2CC7852042}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{DBF88BDE-1888-492A-9774-1FF7615482E3} = {5B0EA58E-CC51-4108-8A2B-40E291CCB9C3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5C3F16BE-CB7F-42A4-949E-453358A0CA5E}
